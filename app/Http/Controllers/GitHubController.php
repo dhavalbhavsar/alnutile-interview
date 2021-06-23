@@ -15,7 +15,7 @@ class GitHubController extends Controller
      */
     public function getToken()
     {
-        $tokenDisplay = 'Please <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">click here to generate GitHub Token</a>.';
+        $tokenDisplay = 'Please <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">click here to generate GitHub Token</a>.';
         $tokenFalg = false;
         
         if(!empty(auth()->user()->github_token)){
